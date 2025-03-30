@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+
+	<!-- Remove all entries then add them -->
+			
+            <li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[filth]/filth/disappearsInDays</xpath>
+            </li>
+			
+            <li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[filth]/filth/rainWashes</xpath>
+            </li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[filth]/filth</xpath>
+					<value>
+						<disappearsInDays>14~15</disappearsInDays>
+						<rainWashes>true</rainWashes>
+					</value>
+			</li>
+			
+	<!-- Correct disappearsInDays for filth with shorter times -->
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Filth_FireFoam"]/filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>5~10</disappearsInDays>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Filth_Ash"]/filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>10~15</disappearsInDays>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Filth_Water"]/filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>0.2~0.4</disappearsInDays>
+				</value>
+			</li>
+			
+		</operations>
+	</Operation>
+	
+	<!-- Fix for Communicable Diseases -->
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "Filth_FluGerms"]</xpath>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Filth_FluGerms"]/filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>0.25</disappearsInDays>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Filth_PlagueGerms"]/filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>0.25</disappearsInDays>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Filth_AnimalFluGerms"]/filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>0.25</disappearsInDays>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Filth_AnimalPlagueGerms"]/filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>0.25</disappearsInDays>
+				</value>
+			</li>
+			
+		</operations>
+	</Operation>
+
+</Patch>

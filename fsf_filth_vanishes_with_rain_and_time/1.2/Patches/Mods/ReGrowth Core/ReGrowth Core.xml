@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "RG_Filth_LeavesTreeOak"]</xpath>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "RG_Filth_LeavesTreeOak"]/filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>14~15</disappearsInDays>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "RG_Filth_LeavesTreeOak"]/filth/rainWashes</xpath>
+				<value>
+					<rainWashes>true</rainWashes>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "RG_Filth_LeavesTreePopolar"]/filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>14~15</disappearsInDays>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "RG_Filth_LeavesTreePopolar"]/filth/rainWashes</xpath>
+				<value>
+					<rainWashes>true</rainWashes>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "RG_Filth_LeavesTreeBirch"]/filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>14~15</disappearsInDays>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "RG_Filth_LeavesTreeBirch"]/filth/rainWashes</xpath>
+				<value>
+					<rainWashes>true</rainWashes>
+				</value>
+			</li>
+			
+		</operations>
+	</Operation>
+	
+</Patch>

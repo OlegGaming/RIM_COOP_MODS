@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+
+			<!-- Filth Vanishes With Rain And Time -->
+				
+			<!-- Remove all entries for rainWashes then readd them to ensure they're all true -->
+			
+            <li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[filth]/filth/rainWashes</xpath>
+            </li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[filth]/filth</xpath>
+				<value>
+					<rainWashes>true</rainWashes>
+				</value>
+			</li>
+				
+			<!-- Only change entries with disappearsInDays 15 or above -->
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef [number(substring-before(filth/disappearsInDays, '~')) >= 15] /filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>14~15</disappearsInDays>
+				</value>
+			</li>
+			
+		</operations>
+	</Operation>
+
+</Patch>
