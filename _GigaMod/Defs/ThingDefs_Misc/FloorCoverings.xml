@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Abstract="True" Name="BuildingFloorCoveringMediumCarpet" ParentName="BuildingFloorCoveringBase">
+    <size>(3,4)</size>
+    <statBases>
+      <Beauty>15</Beauty>
+      <WorkToBuild>1000</WorkToBuild>
+      <Mass>7</Mass>
+      <StyleDominance>30</StyleDominance>
+    </statBases>
+    <designationCategory>Furniture</designationCategory>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingFloorCoveringMediumCarpet">
+    <defName>Grandmother_Carpet</defName>
+    <label>Grandmother carpet</label>
+    <description>An old grandmother carpet.</description>
+    <graphicData>
+      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>Things/Building/FloorCoverings/Carpet</texPath>
+      <drawSize>(3,4)</drawSize>
+    </graphicData>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costStuffCount>85</costStuffCount>
+    <designationCategory>Furniture</designationCategory>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+  </ThingDef>
+
+</Defs>
