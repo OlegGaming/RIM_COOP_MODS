@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>*/ThingDef[defName = "Human"]/race/lifeStageAges</xpath>
+    <value>
+      <lifeStageAges>
+        <li>
+          <def>HumanlikeBaby</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Human_Wounded</soundWounded>
+          <soundDeath>Pawn_Human_Death</soundDeath>
+          <soundCall>Pawn_Human_Wounded</soundCall>
+          <soundAngry>Pawn_Human_Wounded</soundAngry>
+        </li>
+        <li>
+          <def>HumanlikeChild</def>
+          <minAge>3</minAge>
+          <soundWounded>Pawn_Human_Wounded</soundWounded>
+          <soundDeath>Pawn_Human_Death</soundDeath>
+          <soundCall>Pawn_Human_Wounded</soundCall>
+          <soundAngry>Pawn_Human_Wounded</soundAngry>
+        </li>
+		<li MayRequire="Ludeon.RimWorld.Biotech">
+          <def>HumanlikePreTeenager</def>
+          <minAge>9</minAge>
+          <soundWounded>Pawn_Human_Wounded</soundWounded>
+          <soundDeath>Pawn_Human_Death</soundDeath>
+          <soundCall>Pawn_Human_Wounded</soundCall>
+          <soundAngry>Pawn_Human_Wounded</soundAngry>
+        </li>
+        <li>
+          <def>HumanlikeTeenager</def>
+          <minAge>13</minAge>
+          <soundWounded>Pawn_Human_Wounded</soundWounded>
+          <soundDeath>Pawn_Human_Death</soundDeath>
+          <soundCall>Pawn_Human_Wounded</soundCall>
+          <soundAngry>Pawn_Human_Wounded</soundAngry>
+        </li>
+        <li>
+          <def>HumanlikeAdult</def>
+          <minAge>18</minAge>
+          <soundWounded>Pawn_Human_Wounded</soundWounded>
+          <soundDeath>Pawn_Human_Death</soundDeath>
+          <soundCall>Pawn_Human_Wounded</soundCall>
+          <soundAngry>Pawn_Human_Wounded</soundAngry>
+        </li>
+      </lifeStageAges>
+    </value>
+  </Operation>
+</Patch>
