@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <FacialAnimation.LidTypeDef>
+	  <defName>LidNormal</defName>
+	  <texPath>Things/Pawn/Humanlike/Lids/Normal</texPath>
+	  <shader>CutoutSkin</shader>
+  </FacialAnimation.LidTypeDef>
+
+  <FacialAnimation.LidTypeDef>
+    <defName>LidPointy</defName>
+    <texPath>Things/Pawn/Humanlike/Lids/Pointy</texPath>
+    <shader>CutoutSkin</shader>
+    <gender>Female</gender>
+  </FacialAnimation.LidTypeDef>
+
+  <FacialAnimation.LidTypeDef>
+    <defName>LidFlashy</defName>
+    <texPath>Things/Pawn/Humanlike/Lids/Flashy</texPath>
+    <shader>CutoutSkin</shader>
+    <gender>Female</gender>
+  </FacialAnimation.LidTypeDef>
+
+  <FacialAnimation.LidShapeDef>
+  	<defName>normal</defName>
+  </FacialAnimation.LidShapeDef>
+
+  <FacialAnimation.LidShapeDef>
+	  <defName>close</defName>
+    <disableEyeball>true</disableEyeball>
+  </FacialAnimation.LidShapeDef>
+
+
+</Defs>

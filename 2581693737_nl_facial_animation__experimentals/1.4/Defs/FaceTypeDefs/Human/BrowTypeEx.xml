@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <FacialAnimation.BrowTypeDef>
+	  <defName>BrowThick</defName>
+	  <texPath>Things/Pawn/FA-Experimentals/Brows/Thick</texPath>
+	  <shader>Map/Transparent</shader>
+    <probability>0.1</probability>
+    <gender>Female</gender>
+  </FacialAnimation.BrowTypeDef>
+</Defs>

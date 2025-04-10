@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <FacialAnimation.EmotionTypeDef>
+	  <defName>EmotionNormal</defName>
+	  <texPath>Things/Pawn/Humanlike/Emotions/Normal</texPath>
+	  <shader>Transparent</shader>
+  </FacialAnimation.EmotionTypeDef>
+
+  <FacialAnimation.EmotionShapeDef>
+  	<defName>normal</defName>
+  </FacialAnimation.EmotionShapeDef>
+
+  <FacialAnimation.EmotionShapeDef>
+    <defName>blush</defName>
+  </FacialAnimation.EmotionShapeDef>
+</Defs>

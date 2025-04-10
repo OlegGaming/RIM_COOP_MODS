@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	<!-- Regrowth Core Mod	-->
+	
+	<Operation Class="PatchOperationFindMod">
+		
+    	<mods>
+        	<li>ReGrowth: Core and Framework</li>
+    	</mods>
+		
+    	<match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+			
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[@Name = "BaseFilth"]/filth/disappearsInDays</xpath>
+			</li>
+			
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[@Name = "BaseFilth"]/filth/rainWashes</xpath>
+			</li>
+			
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName = "Filth_RubbleRock"]/filth/rainWashes</xpath>
+                <value>
+                    <rainWashes>true</rainWashes>
+                </value>
+            </li>
+			
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName = "Filth_RubbleBuilding"]/filth/rainWashes</xpath>
+                <value>
+                    <rainWashes>true</rainWashes>
+                </value>
+            </li>
+			
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName = "Filth_SlagRubble"]/filth/rainWashes</xpath>
+                <value>
+                    <rainWashes>true</rainWashes>
+                </value>
+            </li>
+			
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName = "Filth_SandbagRubble"]/filth/rainWashes</xpath>
+                <value>
+                    <rainWashes>true</rainWashes>
+                </value>
+            </li>
+			
+        </operations>
+    	</match>
+	
+	</Operation>
+	
+	
+	
+	
+	
+	<!-- Vanilla	-->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+
+	<!-- Base Filth Changes	-->
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[@Name = "BaseFilth"]/filth</xpath>
+				<value>
+					<disappearsInDays>14~15</disappearsInDays>
+					<rainWashes>true</rainWashes>
+				</value>
+			</li>
+			
+	<!-- Change disappearsInDays -->
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Filth_Dirt"]/filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>14~15</disappearsInDays>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Filth_AnimalFilth"]/filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>14~15</disappearsInDays>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Filth_Trash"]/filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>14~15</disappearsInDays>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Filth_Sand"]/filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>14~15</disappearsInDays>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Filth_RubbleRock"]/filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>14~15</disappearsInDays>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Filth_RubbleBuilding"]/filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>14~15</disappearsInDays>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "SlagRubble"]/filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>14~15</disappearsInDays>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "SandbagRubble"]/filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>14~15</disappearsInDays>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Filth_Blood"]/filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>14~15</disappearsInDays>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Filth_BloodInsect"]/filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>14~15</disappearsInDays>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Filth_MachineBits"]/filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>14~15</disappearsInDays>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Filth_AmnioticFluid"]/filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>14~15</disappearsInDays>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Filth_Slime"]/filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>14~15</disappearsInDays>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Filth_Vomit"]/filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>14~15</disappearsInDays>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Filth_Fuel"]/filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>14~15</disappearsInDays>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Filth_CorpseBile"]/filth/disappearsInDays</xpath>
+				<value>
+					<disappearsInDays>14~15</disappearsInDays>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+	
+</Patch>

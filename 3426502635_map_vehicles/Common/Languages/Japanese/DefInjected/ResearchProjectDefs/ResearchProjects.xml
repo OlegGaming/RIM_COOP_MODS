@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<MV_Cart.label>荷車</MV_Cart.label>
+	<MV_Cart.description>荷車を作る方法を学びます.</MV_Cart.description>
+	<MV_Cart.generalRules.rulesStrings.0>subject->荷車</MV_Cart.generalRules.rulesStrings.0>
+	<MV_Cart.generalRules.rulesStrings.1>subject->荷物の重さに耐えられるよう, とても堅くて分厚い木で荷車を製造</MV_Cart.generalRules.rulesStrings.1>
+	<MV_Cart.generalRules.rulesStrings.2>subject->たくさんの物を運べるようになりました</MV_Cart.generalRules.rulesStrings.2>
+	<MV_Cart.generalRules.rulesStrings.3>subject->運び手に十分な膂力があれば</MV_Cart.generalRules.rulesStrings.3>
+	<MV_Cart.generalRules.rulesStrings.4>subject->たくさんの物を運ぶ方法の考案</MV_Cart.generalRules.rulesStrings.4>
+
+</LanguageData>

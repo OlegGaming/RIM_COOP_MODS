@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<MV_Cart.label>荷車</MV_Cart.label>
+	<MV_Cart.description>物を運ぶための大きな荷車です. 信じられないくらい頑丈ですが, 横からの攻撃には弱いです.\n\n&lt;color=#bb8f04&gt;燃料タイプ:&lt;/color&gt; 人力</MV_Cart.description>
+	<MV_Cart.properties.roles.0.label>引き手</MV_Cart.properties.roles.0.label>
+	<MV_Cart.properties.roles.1.label>押し手</MV_Cart.properties.roles.1.label>
+
+</LanguageData>

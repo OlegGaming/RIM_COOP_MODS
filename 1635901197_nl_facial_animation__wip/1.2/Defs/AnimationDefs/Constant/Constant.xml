@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <FacialAnimation.FaceAnimationDef>
+    <defName>normal</defName>
+    <animationFrames>
+      <li>
+        <duration>1</duration>
+        <browShapeDef>normal</browShapeDef>
+        <lidShapeDef>normal</lidShapeDef>
+        <mouthShapeDef>normal</mouthShapeDef>
+        <headShapeDef>normal</headShapeDef>
+      </li>
+    </animationFrames>
+    <priority>0</priority>
+  </FacialAnimation.FaceAnimationDef>
+
+  <FacialAnimation.FaceAnimationDef>
+    <defName>eyeMoving</defName>
+    <animationFrames>
+      <li>
+        <duration>15</duration>
+        <eyeballOffset>(-0.01,0,0)</eyeballOffset>
+        <eyeballColorOffset>RGB(-0.2,-0.2,-0.2)</eyeballColorOffset>
+      </li>
+    </animationFrames>
+    <priority>1002</priority>
+    <roopIntervalMin>30 </roopIntervalMin>
+    <roopIntervalMax>500</roopIntervalMax>
+  </FacialAnimation.FaceAnimationDef>
+
+  <FacialAnimation.FaceAnimationDef>
+    <defName>eyeMoving2</defName>
+    <animationFrames>
+      <li>
+        <duration>15</duration>
+        <eyeballOffset>(0.01,0,0)</eyeballOffset>
+        <eyeballColorOffset>RGB(-0.2,-0.2,-0.2)</eyeballColorOffset>
+      </li>
+    </animationFrames>
+    <priority>1001</priority>
+    <roopIntervalMin>30 </roopIntervalMin>
+    <roopIntervalMax>500</roopIntervalMax>
+  </FacialAnimation.FaceAnimationDef>
+
+  <FacialAnimation.FaceAnimationDef>
+    <defName>eyeFlicker</defName>
+    <animationFrames>
+      <li>
+        <duration>3</duration>
+        <eyeballColorOffset>RGB(0.1,0.1,0.1)</eyeballColorOffset>
+      </li>
+    </animationFrames>
+    <priority>1001</priority>
+    <roopIntervalMin>10 </roopIntervalMin>
+    <roopIntervalMax>30</roopIntervalMax>
+  </FacialAnimation.FaceAnimationDef>
+
+  <FacialAnimation.FaceAnimationDef>
+    <defName>blink</defName>
+    <animationFrames>
+      <li>
+        <duration>3</duration>
+        <browOffset>(0,0,-0.01)</browOffset>
+        <lidOffset>(0,0,-0.01)</lidOffset>
+        <lidShapeDef>normal</lidShapeDef>
+        <eyeballColorOffset>RGB(-0.4,-0.4,-0.4)</eyeballColorOffset>
+      </li>
+      <li>
+        <duration>12</duration>
+        <browOffset>(0,0,-0.02)</browOffset>
+        <lidShapeDef>close</lidShapeDef>
+        <eyeballColorOffset>RGB(-0.2,-0.2,-0.2)</eyeballColorOffset>
+      </li>
+      <li>
+        <duration>3</duration>
+        <browOffset>(0,0,-0.01)</browOffset>
+        <lidOffset>(0,0,-0.01)</lidOffset>
+        <lidShapeDef>normal</lidShapeDef>
+        <eyeballColorOffset>RGB(-0.4,-0.4,-0.4)</eyeballColorOffset>
+      </li>
+    </animationFrames>
+    <roopIntervalMin>30 </roopIntervalMin>
+    <roopIntervalMax>500</roopIntervalMax>
+    <priority>1000</priority>
+  </FacialAnimation.FaceAnimationDef>
+
+</Defs>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Vehicles Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ResearchProjectDef[defName="MV_Cart"]</xpath>
+					<value>
+						<tab>Vehicles</tab>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ResearchProjectDef[defName="MV_Cart"]/researchViewY</xpath>
+					<value>
+						<researchViewY>3.00</researchViewY>
+					</value>
+				</li>
+			</operations>
+		</match>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ResearchTabDef IfModNotActive="OskarPotocki.VanillaVehiclesExpanded">
+							<defName>VehicleMap</defName>
+							<label>VehicleMap</label>
+						</ResearchTabDef>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ResearchProjectDef[defName="MV_Cart"]</xpath>
+					<value>
+						<tab>VehicleMap</tab>
+					</value>
+				</li>
+			</operations>
+		</nomatch>
+	</Operation>
+	
+</Patch>

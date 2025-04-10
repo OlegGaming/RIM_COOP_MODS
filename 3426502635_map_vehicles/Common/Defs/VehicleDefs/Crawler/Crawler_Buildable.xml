@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.VehicleBuildDef ParentName="VehicleWithMapBaseBuildable">
+		<defName>MV_Crawler_Blueprint</defName>
+		<label>crawler</label>
+		<description>Basic tank platform. It has only a power unit with a pair of crawlers, and has no cabin or cargo space.\n\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<designationCategory>VF_Vehicles</designationCategory>
+		<graphicData>
+			<texPath>MapVehicles/Crawler/Crawler</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5.3125,8.5)</drawSize>
+		</graphicData>
+
+		<statBases>
+			<MaxHitPoints>2500</MaxHitPoints>
+			<WorkToBuild>6000</WorkToBuild>
+			<Flammability>0.05</Flammability>
+		</statBases>
+
+		<size>(5,8)</size>
+
+		<researchPrerequisites>
+			<li>Fabrication</li>
+			<li MayRequire="OskarPotocki.VanillaVehiclesExpanded">VVE_CombatVehicles</li>
+			<li MayRequireAnyOf="rimthunder.core,aoba.motorization.engine">EnginePlus</li>
+		</researchPrerequisites>
+		
+		<costList>
+			<Steel>740</Steel>
+			<Chemfuel>80</Chemfuel>
+			<ComponentIndustrial>20</ComponentIndustrial>
+		</costList>
+
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+
+		<thingToSpawn>MV_Crawler</thingToSpawn>
+
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</Vehicles.VehicleBuildDef>
+</Defs>

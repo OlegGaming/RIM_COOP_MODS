@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.VehicleBuildDef ParentName="VehicleBoatWithMapBaseBuildable">
+		<defName>MV_Pantodon_Blueprint</defName>
+		<label>pantodon</label>
+		<description>Large hovercraft that can also carry vehicles.\n\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<designationCategory>VF_Vehicles</designationCategory>
+		<graphicData>
+			<texPath>MapVehicles/Pantodon/Pantodon</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(8.125, 19.888671875)</drawSize>
+		</graphicData>
+
+		<statBases>
+			<MaxHitPoints>2600</MaxHitPoints>
+			<WorkToBuild>14600</WorkToBuild>
+			<Flammability>0.2</Flammability>
+		</statBases>
+
+		<size>(7,19)</size>
+
+		<researchPrerequisites>
+			<li>MicroelectronicsBasics</li>
+			<li MayRequire="OskarPotocki.VanillaVehiclesExpanded">VVE_ComplexVehicles</li>
+			<li MayRequire="OskarPotocki.VanillaVehiclesExpanded">VVE_CombatVehicles</li>
+			<li MayRequireAnyOf="rimthunder.core,aoba.motorization.engine">EngineAdvanced</li>
+		</researchPrerequisites>
+
+		<costList>
+			<Steel>950</Steel>
+			<Plasteel>50</Plasteel>
+			<Chemfuel>300</Chemfuel>
+			<ComponentIndustrial>32</ComponentIndustrial>
+		</costList>
+
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+
+		<thingToSpawn>MV_Pantodon</thingToSpawn>
+
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		
+		<terrainAffordanceNeeded>VMF_DeepWater</terrainAffordanceNeeded>
+	</Vehicles.VehicleBuildDef>
+</Defs>
