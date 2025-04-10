@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-	<MV_Cart.label>大推車</MV_Cart.label>
-	<MV_Cart.description>用來搬運物品的大型推車。結實得令人難以置信，但側面防護較弱。\n\n&lt;color=#bb8f04&gt;動力來源：&lt;/color&gt;人力</MV_Cart.description>
-	<MV_Cart.properties.roles.0.label>拉車者</MV_Cart.properties.roles.0.label>
-	<MV_Cart.properties.roles.1.label>推車者</MV_Cart.properties.roles.1.label>
-
-</LanguageData>

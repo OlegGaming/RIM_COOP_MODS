@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<LanguageData>
-
-	<MV_Crawler_Blueprint.label>クローラー</MV_Crawler_Blueprint.label>
-	<MV_Crawler_Blueprint.description>基本的な戦車の土台です. 動力ユニットと一対の履帯のみを備え, 搭乗席や貨物スペースはありません.\n\n&lt;color=#bb8f04&gt;燃料タイプ:&lt;/color&gt; 化学燃料</MV_Crawler_Blueprint.description>
-
-</LanguageData>

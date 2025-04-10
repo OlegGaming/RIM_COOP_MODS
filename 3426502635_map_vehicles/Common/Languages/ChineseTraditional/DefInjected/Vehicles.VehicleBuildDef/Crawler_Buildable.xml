@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<LanguageData>
-
-	<MV_Crawler_Blueprint.label>履帶底盤</MV_Crawler_Blueprint.label>
-	<MV_Crawler_Blueprint.description>最基本的坦克底盤。只有動力裝置和一對履帶，沒有座位和貨物空間。\n\n&lt;color=#bb8f04&gt;燃料類型：&lt;/color&gt;化學燃料</MV_Crawler_Blueprint.description>
-
-</LanguageData>

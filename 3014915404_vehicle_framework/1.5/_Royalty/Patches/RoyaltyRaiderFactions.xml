@@ -1,9 +1,0 @@
-
-<Patch>
-	<Operation Class = "PatchOperationAddModExtension">
-		<xpath>Defs/FactionDef[defName = "Empire"]</xpath>
-		<value>
-			<li Class = "Vehicles.VehicleRaiderDefModExtension"/>
-		</value>
-	</Operation>
-</Patch>
