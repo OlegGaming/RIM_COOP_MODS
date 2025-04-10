@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/InteractionDef[defName = "KindWords"]/logRulesInitiator/rulesStrings</xpath>
+		<value>
+			<rulesStrings>
+				<li>r_logentry(tag=KindWords_generic)->You are such a nice person, [recipient]!</li>
+				<li>r_logentry(tag=KindWords_generic)->May your home always be too small to hold all your friends, [recipient]!</li>
+				<li>r_logentry(RECIPIENT_trait==beautiful,tag=KindWords_generic)->The only way somebody could be prettier than you, [recipient], is by using makeup!</li>
+				<li>r_logentry(tag=KindWords_generic)->I hope your day goes well, [recipient]!</li>
+				<li>r_logentry(tag=KindWords_generic)->[recipient], you're so [nice_words]! [social_action]</li>
+				<li>r_logentry(tag=KindWords_generic)->[recipient], whatever task you have today, I'm sure [encouragement]!</li>
+				<li>r_logentry(tag=KindWords_generic)->[recipient], you're a help to this colony through and through!</li>
+				<li>r_logentry(tag=KindWords_generic)->[recipient], you're pleasant to be around!</li>
+				<li>r_logentry(tag=KindWords_generic,RECIPIENT_trait==abrasive)->[recipient], I know you say what's on your mind, so [hope] good words are in there today!</li>
+				<li>r_logentry(tag=KindWords_generic,RECIPIENT_trait==ugly)->They may say you're ugly — well, [recipient], just ignore them and let your inner beauty shine through!</li>
+				<li>r_logentry(tag=KindWords_generic,RECIPIENT_trait==staggering ugly)->They may say you're ugly — well, [recipient], just ignore them and let your inner beauty shine through!</li>
+				<li>r_logentry(RECIPIENT_trait==beautiful,tag=KindWords_generic)->The only way somebody could be prettier than you, [recipient], is by using makeup!</li>
+
+			<!--===WILDCARDS===-->
+				<li>hope->I hope</li>
+				<li>hope->maybe</li>
+				<li>hope(INITIATOR_intellectual_level>=5)->perhaps</li>
+				<li>encouragement->you've got it handled</li>
+				<li>encouragement->you'll do great on it</li>
+				<li>encouragement->you've got it down pat</li>
+				<li>encouragement(RECIPIENT_trait==brawler)->you'll nail it on the head</li>
+				<li>encouragement(RECIPIENT_trait==tortured artist)->you'll complete it with your genius and finesse</li>
+				<li>encouragement(RECIPIENT_trait==too smart)->you'll find it easy</li>
+				<li>encouragement(INITIATOR_intellectual_level>=10)->you'll find it easy</li>
+				<li>nice_words->awesome</li>
+				<li>nice_words->cool</li>
+				<li>nice_words->wicked</li>
+				<li>nice_words->incredible</li>
+				<li>nice_words(INITIATOR_intellectual_level>=5)->astonishing</li>
+				<li>nice_words(INITIATOR_intellectual_level>=5)->marvelous</li>
+				<li>nice_words(INITIATOR_intellectual_level>=8)->awe-inspiring</li>
+				<li>nice_words(INITIATOR_intellectual_level>=8)->magnificent</li>
+				<li>social_action-></li>
+				<li>social_action(INITIATOR_social_level>=5)->*finger guns*</li>
+				<li>social_action(INITIATOR_social_level>=3)->*fist pumps*</li>
+				<li>social_action(INITIATOR_social_level>=3)->*high fives*</li>
+				<li>social_action(INITIATOR_social_level>=5)->*thumbs up*</li>
+				<li>social_action(INITIATOR_social_level>=5)->*jazz hands*</li>
+				<li>social_action(INITIATOR_social_level>=8)->*double fist pump*</li>
+				<li>social_action(INITIATOR_social_level>=8)->*double thumbs up*</li>
+				
+				<!-- ===RECIPIENT=== -->		
+				<li>recipient(INITIATOR_opinion&lt;0,priority=2)->[RECIPIENT_nameDef]</li>
+
+				<li>recipient(p=4,INITIATOR_relationship==Lover)->[recipient_love]</li>
+				<li>recipient(p=3,INITIATOR_relationship==Fiance)->[recipient_love]</li>
+				<li>recipient(p=2,INITIATOR_relationship==Spouse)->[recipient_love]</li>
+					<li>recipient_love->honey</li>
+					<li>recipient_love->honey pot</li>
+					<li>recipient_love->love</li>
+					<li>recipient_love->lovebug</li>
+					<li>recipient_love->sweetie</li>
+					<li>recipient_love->sweetheart</li>
+					<li>recipient_love->babe</li>
+					<li>recipient_love->cutiepie</li>
+					<li>recipient_love->starshine</li>
+					<li>recipient_love->angelwing</li>
+					<li>recipient_love->gummybear</li>
+					<li>recipient_love->darling</li>
+					<li>recipient_love->dreamship</li>
+					<li>recipient_love(INITIATOR_intellectual_level>=5)->amore</li>
+					<li>recipient_love(INITIATOR_intellectual_level>=5)->amore mio</li>
+				
+				<li>recipient(INITIATOR_relationship==Sibling)->[recipient_sibling]</li>
+					<li>recipient_sibling(RECIPIENT_gender==Male)->[recipient_brother]</li>
+						<li>recipient_brother->brother</li>
+					<li>recipient_sibling(RECIPIENT_gender==Female)->[recipient_sister]</li>
+						<li>recipient_sister->sister</li>
+
+				<li>recipient(RECIPIENT_relationship==Parent,priority=1)->[recipient_parent]</li>
+					<li>recipient_parent(RECIPIENT_gender==Male)->[recipient_father]</li>
+						<li>recipient_father->father</li>
+						<li>recipient_father->dad</li>
+					<li>recipient_parent(RECIPIENT_gender==Female)->[recipient_mother]</li>
+						<li>recipient_mother->mother</li>
+						<li>recipient_mother->mum</li>
+
+				<li>recipient(INITIATOR_relationship==Parent)->[recipient_child]</li>
+					<li>recipient_child->my child</li>
+					<li>recipient_child(RECIPIENT_gender==Male)->[recipient_son]</li>
+						<li>recipient_son->son</li>
+						<li>recipient_son->my son</li>
+					<li>recipient_child(RECIPIENT_gender==Female)->[recipient_daughter]</li>
+						<li>recipient_daughter->daughter</li>
+						<li>recipient_daughter->my daughter</li>
+						
+				<li>recipient->[RECIPIENT_nameDef]</li>						
+				<!-- ===END RECIPIENT=== -->
+					
+			</rulesStrings>
+		</value>
+	</Operation>
+	
+</Patch>

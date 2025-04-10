@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RuntimeGC</name>
+    </assembly>
+    <members>
+        <member name="M:RuntimeGC.CleanserUtil.DeconstructAnimalFamily">
+            <summary>
+            Manual finalizer for WorldPawnCleaner.GC().
+            Deconstruct all animal families on map and discard the redundant members.
+            </summary>
+            <returns>The count of discarded members.</returns>
+        </member>
+        <member name="M:RuntimeGC.CleanserUtil.RemoveFilth(Verse.Map,System.Boolean)">
+            <summary>
+            Remove all filth in home area.Won't raise errors even the filth is queued up by a Toil.
+            </summary>
+            <returns>The count of filth being cleaned.</returns>
+        </member>
+        <member name="M:RuntimeGC.CleanserUtil.FixFactionRelationships">
+            <summary>
+            Fix faction relationships.This will fix the error "Dummy Relation".
+            </summary>
+        </member>
+        <member name="M:RuntimeGC.CleanserUtil.FixFactionLeader">
+            <summary>
+            Please use FixFactionLeader_Wrapped instead.
+            Generates a leader for null-leader factions.
+            Spacers factions will also be generated,but they will remain null-leadered.
+            Return value is inconclusive.
+            </summary>
+            <returns>Leaders generated,but it is inconclusive.</returns>
+        </member>
+        <member name="M:RuntimeGC.CleanserUtil.FixFactionLeader_Wrapped">
+            <summary>
+            Try to generate a leader for null-leader factions.
+            Factions without leader slot will also be processed,but they will remain null-leadered.
+            </summary>
+            <returns>Leaders generated for null-leader factions.</returns>
+        </member>
+        <member name="M:RuntimeGC.CleanserUtil.RemoveCorpses">
+            <summary>
+            Remove all corpses in currently-active map.
+            Won't raise errors even the corpse is being burned.Corpses hauled by other pawns will be remained.
+            </summary>
+            <returns>The count of corpses being removed.</returns>
+        </member>
+        <member name="M:RuntimeGC.CleanserUtil.InitUsedTalePawns(System.Collections.Generic.List{Verse.Pawn}@)">
+            <summary>
+            Form a list containing all pawns concerned by used tales.
+            </summary>
+        </member>
+        <member name="F:RuntimeGC.WorldPawnCleaner.allPawnsCounter">
+            Verbosity
+        </member>
+        <member name="F:RuntimeGC.WorldPawnCleaner.debug">
+            Debug only.Well,useless.
+        </member>
+        <member name="M:RuntimeGC.WorldPawnCleaner.GC(System.Boolean)">
+            <summary>
+            GC().The best way to shrink Rimworld saves,I think.
+            </summary>
+            <param name="verbose">Determine if GC() should log details very very verbosely</param>
+            <returns>Count of disposed World pawns</returns>
+        </member>
+    </members>
+</doc>
